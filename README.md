@@ -2,17 +2,19 @@
   <img src="logo.svg?sanitize=true" alt="nextcloud installer logo"><br/>
 </p>
 
-With this script you can install Nextcloud on an Ubuntu VPS with one line.
+With this script you can install Nextcloud on an Ubuntu VPS.
 
 This is not an official script from Nextcloud.
-I made it for my own use and thought it might be useful for other people
+I made it for my own use and thought it might be useful for other people.
 
 [Install](#install) | [Requirements](#requirements) | [Instructions](#instructions)
 
 # Install
 
+WARNING: run this on a fresh VPS. It will make changes to the configuration of the server (firewall, install packages, etc.).
+
 ```
-wget https://raw.githubusercontent.com/chr15m/nextcloud-installer-script/main/install-nextcloud.sh
+wget https://git.io/nextcloud-installer -O install-nextcloud.sh
 chmod 755 install-nextcloud.sh
 ./install-nextcloud.sh HOSTNAME USERNAME PASSWORD
 ```
